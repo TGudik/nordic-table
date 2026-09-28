@@ -120,8 +120,12 @@
 .logoImg {
     opacity: 0;
     width: 75px;
+    transition: opacity 0.2s ease;
     @media (min-width: 724px) {
         opacity: 1;
+        width: 125px;
+    }
+    @media (min-width: 1024px) {
         width: 200px;
     }
 }
