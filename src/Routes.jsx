@@ -2,6 +2,8 @@ import { createBrowserRouter, createRoutesFromElements, Route } from "react-rout
 import AppLayout from "./components/appLayout/AppLayout";
 import Loading from "./components/loading/Loading";
 import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import Book from "./pages/Book";
 
 
 const routes = createBrowserRouter(
@@ -10,6 +12,14 @@ const routes = createBrowserRouter(
             <Route 
               index
               element={<Home />}
+            />
+            <Route
+              path="menu"
+              element={<Menu />}
+            />
+            <Route 
+              path="book"
+              element={<Book />}
             />
         </Route>
     )

@@ -25,12 +25,12 @@ export default function Navigation() {
                   Forside
                 </Link>
                 <Link 
-                className={styles.navLink} to="/">
-                  Forside
+                className={styles.navLink} to="/menu">
+                  Menu
                 </Link>
                 <Link 
-                className={styles.navLink} to="/">
-                  Forside
+                className={styles.navLink} to="/book">
+                  Book bord
                 </Link>
                 <Link 
                 className={styles.navLink} to="/">
