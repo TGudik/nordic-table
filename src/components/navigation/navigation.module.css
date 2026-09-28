@@ -1,12 +1,16 @@
 .navContainer {
     width: 100%;
-    padding: 30px 20px;
+    padding: 10px 20px;
     max-height: 140px;
+    position: fixed;
+}
+
+.navContainerOpen {
+    border-bottom: 1px solid #5f5f5f;
 }
 
 .navContent {
     width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,11 +25,12 @@
 @media (max-width: 700px) {
   .nav {
     position: fixed;
-    top: 140px;
+    top: 65px;
     left: 0;
 
     width: 100dvw;
-    height: calc(100dvh - 140px);
+    height: calc(100dvh - 100px);
+    background-color: #fff;
 
     display: grid;
     place-content: center;
@@ -60,7 +65,7 @@
             height: 4px;
             border-radius: 10px;
             transition: 0.3s ease;
-            background-color: #5f5f5f;
+            background-color: #CBA964;
         }
         
         &.open {
@@ -69,13 +74,15 @@
             .bar:nth-child(1) {
                 transform: rotate(45deg)
                 translateY(7.2px);
+                background-color: #5f5f5f;
             }
             .bar:nth-child(2) {
                 display: none;
             }
             .bar:nth-child(3) {
                 transform: rotate(-45deg)
-                translateY(-7.2px)
+                translateY(-7.2px);
+                background-color: #5f5f5f;
             }
         }
     }
@@ -97,6 +104,7 @@
 .navLink::after {
   content: "";
   position: absolute;
+  background-color: #5f5f5f;
   left: 0;
   bottom: 0;
   height: 3px;
@@ -107,4 +115,16 @@
 
 .navLink:hover::after {
   width: 100%;
+}
+
+.logoImg {
+    opacity: 0;
+    width: 75px;
+    @media (min-width: 724px) {
+        opacity: 1;
+        width: 200px;
+    }
+}
+.logoShow {
+    opacity: 1;
 }

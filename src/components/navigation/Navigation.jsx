@@ -7,9 +7,11 @@ export default function Navigation() {
     const [isOpen, setOpen] = useState(false)
 
     return(
-        <div className={styles.navContainer}>
+        <div className={`${styles.navContainer} ${isOpen && styles.navContainerOpen}`}>
             <div className={styles.navContent}>
-              <Link to="/" className={styles.logoLink}>{isOpen && <img className={styles.logoImg} src={logo} alt="Nordic Table Logo" />}</Link>
+              <Link to="/" className={styles.logoLink}>
+                <img className={`${styles.logoImg} ${isOpen && styles.logoShow}`} src={logo} alt="Nordic Table Logo" />
+              </Link>
                 <div 
                 onClick={() => setOpen((prev) => !prev)} 
                 className={`${styles.burger} ${isOpen ? styles.open : ""}`}>
