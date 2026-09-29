@@ -1,3 +1,4 @@
+import AboutSection from "../components/aboutSection/AboutSection";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import HighlightedDishes from "../components/highlightedDishes/HighlightedDishes";
@@ -18,6 +19,7 @@ export default function Home() {
             home
           />
           <HighlightedDishes />
+          <AboutSection />
         </main>
         <Footer />
       </div>

@@ -4,6 +4,7 @@
     align-items: center;
     padding: 40px 30px;
     gap: 15px;
+    white-space-collapse: break-spaces;
 }
 
 .headerWrapper.typeTwo {
@@ -20,7 +21,7 @@
 }
 
 .title {
-    font-size: clamp(32px, calc(20.114px + 3.048vw), 64px);
+    font-size: clamp(24px, calc(20.114px + 3.048vw), 64px);
     font-family: var(--heading);
     letter-spacing: 5%;
     font-weight: 500;
@@ -37,7 +38,7 @@
     bottom: 0;
     left: 0;
     width: 30%;
-    height: 1px;
+    height: 2px;
     background: #B39659;
 }
 
@@ -45,10 +46,11 @@
     color: #7C632F;
     font-weight: 400;
     font-family: var(--body);
-    font-size: clamp(11px, calc(6.171px + 1.238vw), 24px);
+    font-size: clamp(12px, calc(6.171px + 1.238vw), 24px);
     text-align: center;
 }
 
 .subTitle.typeTwo {
     text-align: start;
+    color: #5f5f5f;
 }
