@@ -1,5 +1,6 @@
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
+import HighlightedDishes from "../components/highlightedDishes/HighlightedDishes";
 import Navigation from "../components/navigation/Navigation";
 
 
@@ -16,7 +17,7 @@ export default function Home() {
             body="Nordic Table er et sted, hvor sæsonens bedste råvarer forvandles til uforglemmelige oplevelser. Ro, kvalitet og hygge i hvert eneste måltid."
             home
           />
-          <h1>Home</h1>
+          <HighlightedDishes />
         </main>
         <Footer />
       </div>

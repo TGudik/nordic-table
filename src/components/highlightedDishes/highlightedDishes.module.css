@@ -1,0 +1,29 @@
+.dishesWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+
+}
+.sectionWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seeMenu {
+    padding: 8px 12px;
+    background-color: transparent;
+    border: 1px solid black;
+    font-family: var(--body);
+    font-size: clamp(12px, calc(7.543px + 1.143vw), 24px);
+    margin-bottom: 30px;
+}
+
+
+@media (min-width: 900px) {
+    .dishesWrapper {
+        flex-direction: row;
+    }
+}

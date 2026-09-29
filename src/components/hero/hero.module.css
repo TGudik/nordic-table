@@ -6,7 +6,7 @@
 }
 
 .heroWrapper.onHome {
-    height: clamp(527px, calc(274.057px + 64.857vw), 1208px);
+    height: clamp(527px, calc(274.057px + 64.857vw), 800px);
 }
 
 .heroImg {
@@ -68,10 +68,10 @@
     background-color: #B39659;
     color: white;
     border: none;
-    padding: 10px;
+    padding: clamp(10px, calc(6.286px + 0.952vw), 20px);
     font-family: var(--body);
     font-weight: 400;
-    font-size: (11px, calc(6.171px + 1.238vw), 24px);
+    font-size: clamp(16px, calc(13.029px + 0.762vw), 24px);
     line-height: 100%;
 }
 

@@ -11,3 +11,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    background-color: #F7F5F2;
+}

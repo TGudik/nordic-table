@@ -4,6 +4,7 @@ import Loading from "./components/loading/Loading";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Book from "./pages/Book";
+import { dishesLoader } from "./loaders/DataLoaders";
 
 
 const routes = createBrowserRouter(
@@ -12,10 +13,12 @@ const routes = createBrowserRouter(
             <Route 
               index
               element={<Home />}
+              loader={dishesLoader}
             />
             <Route
               path="menu"
               element={<Menu />}
+              loader={dishesLoader}
             />
             <Route 
               path="book"
