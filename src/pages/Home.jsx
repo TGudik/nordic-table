@@ -1,3 +1,4 @@
+import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Navigation from "../components/navigation/Navigation";
 
@@ -7,7 +8,7 @@ export default function Home() {
 
     return (
       <div>
-        <Navigation />
+        <Navigation home/>
         <main>
           <Hero
             heading={"Smag det \nnordiske"}
@@ -17,6 +18,7 @@ export default function Home() {
           />
           <h1>Home</h1>
         </main>
+        <Footer />
       </div>
     );
 }

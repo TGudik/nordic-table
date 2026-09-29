@@ -1,3 +1,4 @@
+import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Navigation from "../components/navigation/Navigation";
 
@@ -15,6 +16,7 @@ export default function Menu() {
             }
           />
         </main>
+        <Footer />
       </div>
     );
 }
