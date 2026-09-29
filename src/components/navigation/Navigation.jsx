@@ -1,7 +1,8 @@
 import styles from "./navigation.module.css"
 import { Link, useLocation } from "react-router-dom"
 import { useEffect, useState } from "react"
-import logo from "../../assets/logos/logoBlack.png"
+import logoBlack from "../../assets/logos/logoBlack.png"
+import logoWhite from "../../assets/logos/logoWhite.png"
 
 export default function Navigation({home}) {
     const [isOpen, setOpen] = useState(false)
@@ -16,7 +17,7 @@ export default function Navigation({home}) {
           <Link to="/" className={styles.logoLink}>
             <img
               className={`${styles.logoImg} ${isOpen && styles.logoShow}`}
-              src={logo}
+              src={home ? logoWhite : logoBlack}
               alt="Nordic Table Logo"
             />
           </Link>
