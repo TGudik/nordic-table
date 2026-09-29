@@ -35,8 +35,9 @@
 @media (max-width: 700px) {
   .nav {
     position: fixed;
-    top: 65px;
+    top: 60px;
     left: 0;
+    border-top: 1px solid #5f5f5f;
 
     width: 100dvw;
     height: calc(100dvh - 100px);
