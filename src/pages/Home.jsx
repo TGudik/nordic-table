@@ -1,4 +1,5 @@
 import AboutSection from "../components/aboutSection/AboutSection";
+import BookTableCTA from "../components/bookTableCTA/BookTableCTA";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import HighlightedDishes from "../components/highlightedDishes/HighlightedDishes";
@@ -20,6 +21,7 @@ export default function Home() {
           />
           <HighlightedDishes />
           <AboutSection />
+          <BookTableCTA />
         </main>
         <Footer />
       </div>

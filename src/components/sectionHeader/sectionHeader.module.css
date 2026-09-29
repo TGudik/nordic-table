@@ -42,6 +42,10 @@
     background: #B39659;
 }
 
+.title.colorTwo {
+    color: white;
+}
+
 .subTitle {
     color: #7C632F;
     font-weight: 400;
@@ -53,4 +57,8 @@
 .subTitle.typeTwo {
     text-align: start;
     color: #5f5f5f;
+}
+
+.subTitle.colorTwo {
+    color: white;
 }
