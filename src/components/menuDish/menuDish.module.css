@@ -1,0 +1,30 @@
+.dishWrapper {
+    padding: clamp(10px, calc(5.412px + 1.176vw), 20px) 0;
+    margin: clamp(5px, calc(2.706px + 0.588vw), 10px) clamp(20px, calc(10.824px + 2.353vw), 40px);
+    border-bottom: 0.5px solid #916B1C;
+}
+
+.title {
+    font-family: var(--heading);
+    color: #1A1A1A;
+    font-weight: 300;
+    font-size: clamp(20px, calc(7.153px + 3.294vw), 48px);
+}
+
+.descNprice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.description {
+    font-family: var(--heading);
+    font-size: clamp(12px, calc(3.741px + 2.118vw), 30px);
+}
+
+.price {
+    font-family: var(--heading);
+    font-size: clamp(12px, calc(3.741px + 2.118vw), 30px);
+    white-space: nowrap;
+}
