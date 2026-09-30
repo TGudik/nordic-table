@@ -5,7 +5,7 @@
     gap: 15px;
     margin: clamp(5px, calc(2.706px + 0.588vw), 10px) clamp(20px, calc(10.824px + 2.353vw), 40px);
     padding: clamp(10px, calc(0.824px + 2.353vw), 30px) 0;
-    border-bottom: 1px solid;
+    border-bottom: 2px solid #916B1C;
 }
 
 .menuType {
