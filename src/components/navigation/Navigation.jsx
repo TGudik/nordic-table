@@ -9,7 +9,7 @@ export default function Navigation({home}) {
     const [isOpen, setOpen] = useState(false)
 
     let location = useLocation()
-    const {user} = useAuth()
+    const {user, logout} = useAuth()
 
     return (
       <div
@@ -50,19 +50,29 @@ export default function Navigation({home}) {
             >
               Book bord
             </Link>
-            <Link
-              className={`${styles.navLink} ${location.pathname === "/login" && styles.active}`}
-              to="/login"
-            >
-              Login
-            </Link>
-            {user && 
-            <Link
-              className={`${styles.navLink} ${location.pathname === "/backoffice" && styles.active}`}
-              to="/backoffice"
-            >
-              Backoffice
-            </Link>}
+            {!user ? (
+              <Link
+                className={`${styles.navLink} ${location.pathname === "/login" && styles.active}`}
+                to="/login"
+              >
+                Login
+              </Link>
+            ) : (
+              <Link
+                className={styles.navLink}
+                onClick={logout}
+              >
+                Log ud
+              </Link>
+            )}
+            {user && (
+              <Link
+                className={`${styles.navLink} ${location.pathname === "/backoffice" && styles.active}`}
+                to="/backoffice"
+              >
+                Backoffice
+              </Link>
+            )}
           </nav>
         </div>
       </div>
