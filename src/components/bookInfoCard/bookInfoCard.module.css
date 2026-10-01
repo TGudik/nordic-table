@@ -1,0 +1,34 @@
+.cardWrapper {
+    padding: 10px;
+    background-color: #F2EDE5;
+    border-radius: 10px;
+    border-left: 3px solid #916B1C;
+    margin: 5px;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}  
+
+.iconWrapper {
+    font-size: clamp(30px, calc(2.143px + 7.143vw), 45px);
+    padding: clamp(10px, calc(-8.571px + 4.762vw), 20px);
+}
+
+.textWrapper {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    font-family: var(--heading);
+    font-weight: 300;
+    font-size: clamp(20px, calc(-2.286px + 5.714vw), 32px);
+}
+
+.description {
+    font-family: var(--body);
+    font-weight: 300;
+    font-size: clamp(9px, calc(-11.429px + 5.238vw), 20px);
+}
