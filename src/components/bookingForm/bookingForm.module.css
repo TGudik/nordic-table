@@ -1,0 +1,66 @@
+.sectionWrapper {
+    padding: 30px 14px;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 2px #916B1C1A;
+}
+
+.sectionTitle {
+    font-family: var(--heading);
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.inputWrapper label {
+    font-family: var(--body);
+    color: #5F5F5F;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.inputWrapper input, .inputWrapper select {
+    padding: 12px ;
+    border-radius: 5px;
+    border: 1px solid #916B1C;
+    color: #5F5F5F;
+    font-family: var(--body);
+    font-weight: 400;
+    border: 1px solid #916B1C;
+}
+
+.dateNtimeWrapper {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.dateNtimeWrapper .inputWrapper {
+    width: 100%;
+}
+
+.error {
+    font-family: var(--body);
+    color: red;
+    font-size: 12px;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 20px;
+    background-color: #7C632F;
+    color: white;
+    font-family: var(--body);
+    border: none;
+    box-shadow: 4px 4px 4px 2px #916B1C1A;
+}

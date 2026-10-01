@@ -1,4 +1,5 @@
 import BookInfoCards from "../components/bookInfoCards/BookInfoCards";
+import BookingForm from "../components/bookingForm/BookingForm";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Navigation from "../components/navigation/Navigation";
@@ -28,6 +29,7 @@ export default function Book() {
             typeTwo
           />
           <BookInfoCards />
+          <BookingForm />
         </main>
         <Footer />
       </div>
