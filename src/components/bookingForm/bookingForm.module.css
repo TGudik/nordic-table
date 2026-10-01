@@ -1,7 +1,7 @@
 .sectionWrapper {
-    padding: 30px 14px;
+    padding: clamp(30px, calc(20.488px + 2.439vw), 40px) clamp(14px, calc(3.537px + 2.683vw), 25px);
     background: #fff;
-    margin: 0 20px;
+    margin: 45px 20px;
     border-radius: 10px;
     box-shadow: 4px 4px 4px 2px #916B1C1A;
 }
@@ -9,15 +9,15 @@
 .sectionTitle {
     font-family: var(--heading);
     font-weight: 400;
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: clamp(20px, calc(0.976px + 4.878vw), 40px);
+    margin-bottom: clamp(15px, calc(-8.78px + 6.098vw), 40px);
 }
 
 .inputWrapper {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-bottom: 10px;
+    margin-bottom: clamp(15px, calc(-8.78px + 6.098vw), 40px);
     max-width: 100%;
     min-width: 0;
 }
@@ -25,17 +25,18 @@
 .inputWrapper label {
     font-family: var(--body);
     color: #5F5F5F;
-    font-size: 15px;
+    font-size: clamp(15px, calc(10.244px + 1.22vw), 20px);
     font-weight: 400;
 }
 
 .inputWrapper input, .inputWrapper select {
-    padding: 12px ;
+    padding: clamp(12px, calc(4.39px + 1.951vw), 20px) ;
     border-radius: 5px;
     border: 1px solid #916B1C;
     color: #5F5F5F;
     font-family: var(--body);
     font-weight: 400;
+    font-size: clamp(15px, calc(10.244px + 1.22vw), 20px);
     border: 1px solid #916B1C;
 }
 
@@ -62,5 +63,6 @@
     color: white;
     font-family: var(--body);
     border: none;
+    font-size: clamp(15px, calc(6.439px + 2.195vw), 24px);
     box-shadow: 4px 4px 4px 2px #916B1C1A;
 }
