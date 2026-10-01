@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Book from "./pages/Book";
 import { dishesLoader } from "./loaders/DataLoaders";
+import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
+import Backoffice from "./pages/Backoffice";
+import Login from "./pages/Login";
 
 
 const routes = createBrowserRouter(
@@ -24,6 +27,19 @@ const routes = createBrowserRouter(
               path="book"
               element={<Book />}
             />
+            <Route  
+              path="login"
+              element={<Login />}
+            />
+            <Route 
+              path="backoffice"
+              element={<ProtectedRoute />}
+            >
+              <Route
+               index
+               element={<Backoffice />}
+              />
+            </Route>
         </Route>
     )
 )

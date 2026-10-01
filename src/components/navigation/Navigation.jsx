@@ -3,11 +3,13 @@ import { Link, useLocation } from "react-router-dom"
 import { useEffect, useState } from "react"
 import logoBlack from "../../assets/logos/logoBlack.png"
 import logoWhite from "../../assets/logos/logoWhite.png"
+import { useAuth } from "../../context/AuthContext"
 
 export default function Navigation({home}) {
     const [isOpen, setOpen] = useState(false)
 
     let location = useLocation()
+    const {user} = useAuth()
 
     return (
       <div
@@ -50,10 +52,17 @@ export default function Navigation({home}) {
             </Link>
             <Link
               className={`${styles.navLink} ${location.pathname === "/login" && styles.active}`}
-              to="/"
+              to="/login"
             >
-              Forside
+              Login
             </Link>
+            {user && 
+            <Link
+              className={`${styles.navLink} ${location.pathname === "/backoffice" && styles.active}`}
+              to="/backoffice"
+            >
+              Backoffice
+            </Link>}
           </nav>
         </div>
       </div>
