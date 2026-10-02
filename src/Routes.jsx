@@ -4,11 +4,12 @@ import Loading from "./components/loading/Loading";
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Book from "./pages/Book";
-import { dishesLoader } from "./loaders/DataLoaders";
+import { bookingsLoader, dishesLoader } from "./loaders/DataLoaders";
 import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
 import Backoffice from "./pages/Backoffice";
 import Login from "./pages/Login";
 import BackofficeDishes from "./pages/BackofficeDishes";
+import BackofficeBookings from "./pages/BackofficeBookings";
 
 
 const routes = createBrowserRouter(
@@ -44,6 +45,11 @@ const routes = createBrowserRouter(
                 path="dishes"
                 element={<BackofficeDishes />}
                 loader={dishesLoader}
+              />
+              <Route
+                path="bookings"
+                element={<BackofficeBookings />}
+                loader={bookingsLoader}
               />
             </Route>
         </Route>

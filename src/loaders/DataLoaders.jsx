@@ -8,3 +8,12 @@ export const dishesLoader = async () => {
     const data = preData.data
     return data
 }
+
+export const bookingsLoader = async () => {
+
+    const res = await fetch(`${apiUrl}/bookings`)
+    if (!res.ok) throw new Response("Fejl i at hente reservationer", {status: res.status})
+    const preData = await res.json()
+    const data = preData.data
+    return data
+}
