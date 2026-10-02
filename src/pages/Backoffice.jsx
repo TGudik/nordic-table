@@ -1,3 +1,4 @@
+import BackNav from "../components/backoffice/backNav/BackNav";
 
 
 export default function Backoffice() {
@@ -5,7 +6,7 @@ export default function Backoffice() {
 
     return (
         <div>
-            backoffice
+            <BackNav />
         </div>
     )
 }
