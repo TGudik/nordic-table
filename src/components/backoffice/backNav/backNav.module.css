@@ -1,0 +1,32 @@
+.navWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px ;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.navLink {
+    font-size: 60px;
+    padding: 40px;
+    text-decoration: none;
+    font-family: var(--heading);
+    color: #7C632F;
+    border: 1px solid #7C632F;
+    width: 100%;
+    text-align: center;
+}
+
+.backBtn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #7C632F;
+    text-transform: uppercase;
+    font-family: var(--body);
+    font-weight: 400;
+    padding: 30px 10px;
+}

@@ -8,6 +8,7 @@ import { dishesLoader } from "./loaders/DataLoaders";
 import ProtectedRoute from "./components/protectedRoute/ProtectedRoute";
 import Backoffice from "./pages/Backoffice";
 import Login from "./pages/Login";
+import BackofficeDishes from "./pages/BackofficeDishes";
 
 
 const routes = createBrowserRouter(
@@ -38,6 +39,11 @@ const routes = createBrowserRouter(
               <Route
                index
                element={<Backoffice />}
+              />
+              <Route
+                path="dishes"
+                element={<BackofficeDishes />}
+                loader={dishesLoader}
               />
             </Route>
         </Route>

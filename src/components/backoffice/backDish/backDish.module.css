@@ -1,0 +1,28 @@
+.dishWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.infoHeading {
+    font-family: var(--body);
+    font-size: 20px;
+}
+
+.infoTitle {
+    font-size: 24px;
+    font-family: var(--body);
+}
+
+.btnWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+}
