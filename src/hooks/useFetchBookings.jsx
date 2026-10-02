@@ -76,9 +76,34 @@ export function useFetchBookings() {
         revalidate()
     }
 
+    async function removeBooking(id) {
+        const result = await Swal.fire({
+            icon: "warning",
+            title: "Slet booking?",
+            showCancelButton: true,
+            confirmButtonText: "Slet"
+        })
+        if (!result.isConfirmed) return
+
+        const token = getToken()
+
+        const res = await fetch(`${apiUrl}/${id}`, {
+            method: "DELETE", 
+            headers: {
+                authorization: `Bearer ${token}`
+            }
+        })
+        if (!res.ok) throw new Error("Fejl i at slette reservation", {status: res.status})
+        const data = await res.json()
+        console.log(data)
+        revalidate()
+    }
+
+
     return {
         makeBooking,
         acceptBooking,
-        declineBooking
+        declineBooking,
+        removeBooking
     }
 }

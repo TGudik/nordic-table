@@ -4,7 +4,7 @@ import styles from "./backBooking.module.css"
 export default function BackBooking({booking}) {
 
     const date = new Date(booking.startAt)
-    const {acceptBooking, declineBooking} = useFetchBookings()
+    const {acceptBooking, declineBooking, removeBooking} = useFetchBookings()
 
     return (
       <div className={styles.cardWrapper}>
@@ -20,6 +20,7 @@ export default function BackBooking({booking}) {
                 <button onClick={() => declineBooking(booking._id)}>Annuller</button>
             </div>
         )}
+        <button onClick={() => removeBooking(booking._id)}>Slet booking</button>
       </div>
     );
 
