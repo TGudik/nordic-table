@@ -10,6 +10,7 @@ import Backoffice from "./pages/Backoffice";
 import Login from "./pages/Login";
 import BackofficeDishes from "./pages/BackofficeDishes";
 import BackofficeBookings from "./pages/BackofficeBookings";
+import NotFound from "./pages/NotFound";
 
 
 const routes = createBrowserRouter(
@@ -52,6 +53,10 @@ const routes = createBrowserRouter(
                 loader={bookingsLoader}
               />
             </Route>
+            <Route
+              path="*"
+              element={<NotFound/>}
+            />
         </Route>
     )
 )
